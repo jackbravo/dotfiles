@@ -1,0 +1,17 @@
+allpartial off                  # Refresh entire screen on window change
+#escape "||"                     # Redefine the prefix key to ¿ and define a
+                                # literal ¿ as ¿¿
+startup_message off             # Disable startup messages
+defscrollback 1000
+altscreen on
+vbell off
+
+#change the hardstatus settings to give an window list at the bottom of the
+#screen, with the time and date and with the current window highlighted
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+#hardstatus string '%{= mK}%-Lw%{= KW}%50>%n%f* %t%{= mK}%+Lw%< %{= kG}%-=%D %d %M %Y %c:%s%{-}'
+
+
+#screen -t 'shell'    0   bash
+#screen -t irssi      1   irssi
